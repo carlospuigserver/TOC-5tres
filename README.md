@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 # Ejercicio 3 apartado A
+=======
+Ejercicio 3 apartado A
+
+
+
+>>>>>>> e62323b28c2600d60e9eeca8cd8d3e338540fe47
 
 
 # Propuesta de grafo
@@ -19,4 +26,8 @@ En este proyecto, hemos creado un grafo de conocimiento utilizando la biblioteca
 El grafo de conocimiento incluye información adicional sobre las entidades, como el tipo de entidad, el período histórico en el que vivieron (en el caso de los autores), el año de creación de las obras y un resumen breve de las obras literarias.
 
 # Uso de la Aplicación
+<<<<<<< HEAD
 La aplicación permite a los usuarios ingresar una consulta en un cuadro de entrada y buscar información en el grafo de conocimiento. Al hacer clic en el botón "Buscar," se mostrará una ventana emergente con la información relevante recuperada del grafo. La aplicación también está diseñada para ser visualmente atractiva y fácil de usar.
+=======
+La aplicación permite a los usuarios ingresar una consulta en un cuadro de entrada y buscar información en el grafo de conocimiento. Al hacer clic en el botón "Buscar," se mostrará una ventana emergente con la información relevante recuperada del grafo. La aplicación también está diseñada para ser visualmente atractiva y fácil de usar.
+>>>>>>> e62323b28c2600d60e9eeca8cd8d3e338540fe47
