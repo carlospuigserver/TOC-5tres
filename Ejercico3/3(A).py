@@ -3,10 +3,10 @@ import tkinter as tk
 from tkinter import messagebox
 from tkinter import scrolledtext
 
-# Crear un grafo de conocimiento utilizando networkx
+# Crear el
 grafo_conocimiento = nx.DiGraph()
 
-# Agregar nodos y relaciones al grafo de conocimiento
+# Agrego los nodos y relaciones al grafo de conocimiento
 grafo_conocimiento.add_node("William Shakespeare", tipo="autor", periodo="Renacimiento")
 grafo_conocimiento.add_node("Romeo y Julieta", tipo="obra", genero="Tragedia", año="1597",
                             resumen="Romeo y Julieta es una de las obras más conocidas de William Shakespeare. "
@@ -33,7 +33,7 @@ grafo_conocimiento.add_edge("William Shakespeare", "La Tempestad", relacion="esc
 grafo_conocimiento.add_node("Renacimiento", tipo="época histórica", duracion="Siglo XIV al Siglo XVII")
 grafo_conocimiento.add_edge("William Shakespeare", "Renacimiento", relacion="vivió durante")
 
-# Función para buscar información en el grafo de conocimiento
+# Esta funcion sirve para buscar la informacion en el grafo
 def buscar_informacion():
     entidad_busqueda = entrada.get()
     if entidad_busqueda in grafo_conocimiento.nodes:
@@ -45,7 +45,7 @@ def buscar_informacion():
     else:
         mostrar_resultado(f"No se encontró la entidad '{entidad_busqueda}' en el grafo de conocimiento.")
 
-# Función para obtener información del grafo
+# Esta funcion sirve para obtener informacion del grafo
 def obtener_informacion(entidad):
     informacion = {}
     if entidad in grafo_conocimiento.nodes:
@@ -69,36 +69,39 @@ def informacion_str(info):
         info_str += f"- {relacion[0]} {relacion[2]['relacion']} {relacion[1]}\n"
     return info_str
 
-# Función para mostrar resultados en una ventana nueva
+# Empezamos con el tkinter
+
+
+
 def mostrar_resultado(texto):
     ventana_resultado = tk.Toplevel()
     ventana_resultado.title("Resultado")
-    ventana_resultado.geometry("800x600")  # Tamaño de la ventana de resultados
+    ventana_resultado.geometry("1200x1200")  
 
-    # Crear un widget de texto desplazable para mostrar la información
+    
     texto_resultado = scrolledtext.ScrolledText(ventana_resultado, wrap=tk.WORD, width=80, height=20)
     texto_resultado.insert(tk.INSERT, texto)
     texto_resultado.pack(padx=20, pady=20)
 
-# Crear la ventana principal
+
 ventana = tk.Tk()
 ventana.title("Consulta de Grafo de Conocimiento")
 
-# Aumentar el tamaño de la ventana para ocupar la pantalla completa
+
 ancho_pantalla = ventana.winfo_screenwidth()
 alto_pantalla = ventana.winfo_screenheight()
 ventana.geometry(f"{ancho_pantalla}x{alto_pantalla}")
 
-# Crear etiqueta e input
+
 etiqueta = tk.Label(ventana, text="Ingrese una consulta:", font=("Arial", 36))  # Cambiar fuente y tamaño del texto
 etiqueta.pack(pady=40)
 entrada = tk.Entry(ventana, font=("Arial", 28))  # Cambiar fuente y tamaño del texto
 entrada.pack()
 
-# Cambiar el color de fondo del botón y aumentar el tamaño de fuente
+
 boton_buscar = tk.Button(ventana, text="Buscar", command=buscar_informacion, bg="green", fg="white",
                          font=("Arial", 28))
 boton_buscar.pack(pady=40)
 
-# Ejecutar la ventana
+
 ventana.mainloop()
