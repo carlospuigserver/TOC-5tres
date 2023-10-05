@@ -76,7 +76,7 @@ def informacion_str(info):
 def mostrar_resultado(texto):
     ventana_resultado = tk.Toplevel()
     ventana_resultado.title("Resultado")
-    ventana_resultado.geometry("1200x1200")  
+    ventana_resultado.geometry("1300x1300")  
 
     
     texto_resultado = scrolledtext.ScrolledText(ventana_resultado, wrap=tk.WORD, width=80, height=20)
