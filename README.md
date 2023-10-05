@@ -1,8 +1,4 @@
 
-Ejercicio 3 apartado A
-
-
-
 
 # Propuesta de grafo
 
@@ -139,3 +135,33 @@ boton_buscar.pack(pady=40)
 ventana.mainloop()
 
 ```
+
+# Evaluación del modelo
+
+A continuación se procederá a evaluar el modelo propuesto en base a su precisión, relevancia y confiabilidad (el apartado 4 del enunciado). Cabe destacar que no se ha podido realizar la parte del Chat GPT porque se requería su versión de pago.
+
+Para evaluar la precisión, relevancia y confiabilidad del código proporcionado, se pueden considerar los siguientes aspectos:
+
+Precisión:
+La precisión se refiere a la exactitud y corrección del código al buscar y mostrar información relevante del grafo de conocimiento. En este caso, el código parece ser preciso, ya que verifica si la entidad ingresada por el usuario existe en el grafo y muestra información relevante si la encuentra.
+
+Relevancia:
+La relevancia se refiere a la importancia y utilidad de la información proporcionada. El código muestra información relevante sobre la entidad ingresada, incluyendo detalles como tipo, atributos y relaciones. La relevancia también puede ser mejorada agregando más atributos específicos para cada tipo de entidad en el grafo, si es necesario.
+
+Confiabilidad:
+La confiabilidad se refiere a la estabilidad y consistencia del código. El código es confiable en términos de su funcionalidad básica. 
+
+# Conclusiones
+
+El código proporcionado es una aplicación simple que utiliza el módulo NetworkX para crear un grafo de conocimiento sobre William Shakespeare y sus obras. Además, utiliza la interfaz gráfica de Tkinter para permitir a los usuarios buscar información sobre las entidades del grafo. El código maneja algunos posibles errores, como entradas vacías y la falta de atributos en los nodos del grafo.
+
+La aplicación muestra información precisa sobre las entidades encontradas en el grafo, incluyendo detalles como tipo, relaciones y atributos.
+
+Hemos decidido añadir una interfaz para darle un toque personal al proyecto que nos diferencie del resto. Esta es sencilla y fácil de usar, permitiendo a los usuarios ingresar consultas y ver los resultados de manera clara.
+
+
+
+
+
+
+
